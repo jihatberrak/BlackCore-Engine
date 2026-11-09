@@ -1,0 +1,31 @@
+﻿<Project Sdk="Microsoft.NET.Sdk">
+
+  <PropertyGroup>
+    <TargetFramework>net10.0</TargetFramework>
+    <ImplicitUsings>enable</ImplicitUsings>
+    <Nullable>enable</Nullable>
+    <IsPackable>false</IsPackable>
+  </PropertyGroup>
+
+  <ItemGroup>
+    <PackageReference Include="coverlet.collector" Version="6.0.4" />
+    <PackageReference Include="Microsoft.NET.Test.Sdk" Version="17.14.1" />
+    <PackageReference Include="xunit" Version="2.9.3" />
+    <PackageReference Include="xunit.runner.visualstudio" Version="3.1.4" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <Using Include="Xunit" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <ProjectReference Include="..\..\src\BlackCore.Engine\BlackCore.Engine.csproj" />
+    <ProjectReference Include="..\..\src\BlackCore.Infrastructure\BlackCore.Infrastructure.csproj" />
+    <ProjectReference Include="..\..\src\BlackCore.Frontend.Cpp\BlackCore.Frontend.Cpp.csproj" />
+    <ProjectReference Include="..\..\src\BlackCore.Backend.LLVM\BlackCore.Backend.LLVM.csproj" />
+    <ProjectReference Include="..\..\src\BlackCore.Frontend.CSharp\BlackCore.Frontend.CSharp.csproj" />
+    <ProjectReference Include="..\..\src\BlackCore.Backend.NativeAot\BlackCore.Backend.NativeAot.csproj" />
+    <ProjectReference Include="..\..\src\BlackCore.Protection\BlackCore.Protection.csproj" />
+  </ItemGroup>
+
+</Project>

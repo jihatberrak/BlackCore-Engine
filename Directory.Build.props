@@ -1,0 +1,12 @@
+<Project>
+
+  <!--
+    Tekrarlanabilir derleme: derleme kök yolu (ör. F:\Projects\...) DLL'lerdeki PDB/debug dizinine gömülür.
+    Kök yolu sabit bir değerle eşleyerek aynı kaynaktan farklı klasörlerde aynı ikili üretilir.
+  -->
+  <PropertyGroup>
+    <Deterministic>true</Deterministic>
+    <PathMap Condition="'$(PathMap)' == ''">$(MSBuildThisFileDirectory)=/_/</PathMap>
+  </PropertyGroup>
+
+</Project>

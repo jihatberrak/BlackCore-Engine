@@ -1,0 +1,29 @@
+{
+  "version": 1,
+  "target": {
+    "operatingSystem": "windows",
+    "architecture": "x64"
+  },
+  "build": {
+    "configuration": "Release",
+    "optimization": "O2",
+    "outputDirectory": "artifacts"
+  },
+  "toolchains": {
+    "llvmDirectory": "C:/Users/mavij/tools/llvm-22.1.8",
+    "dotnetExecutable": "dotnet"
+  },
+  "analysis": {
+    "failOnWarnings": false,
+    "runStaticAnalysis": true
+  },
+  "protection": {
+    "enabled": true,
+    "provider": "blackcore-test-provider"
+  },
+  "execution": {
+    "toolTimeoutSeconds": 300,
+    "smokeTestTimeoutSeconds": 15
+  }
+}
+

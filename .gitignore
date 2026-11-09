@@ -1,0 +1,14 @@
+# Derleme çıktıları
+bin/
+obj/
+artifacts/
+publish/
+
+# IDE
+.vs/
+.vscode/
+*.user
+*.suo
+
+# Geçici
+*.tmp
